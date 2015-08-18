@@ -560,7 +560,7 @@ define([
         userFormNode = dom.byId('userForm');
         formContent = domConstruct.create("div", {
           className: "form-group hasAttachment geoFormQuestionare"
-        }, userFormNode);
+        }, userFormNode, "first");
         //code to make the attachment input mandatory
         if (this.config.attachmentInfo[this._formLayer.id].attachmentIsRequired) {
           domClass.add(formContent, "mandatory");
